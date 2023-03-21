@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 #An OCP version to deploy
-ocpVersion: 4.11.9
+ocpVersion: 4.12.0
 
 #An OCP arch to deploy
 ocpArch: x86_64

@@ -4,25 +4,25 @@ entries:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
-    created: "2023-02-15T15:17:19.100893758+01:00"
+    created: "2023-03-21T20:14:28.50016025+02:00"
     description: A Helm chart which installs Hypershift cluster using KubeVirt platform
     digest: dda9d1468dc9f0d236f866a4a09142ce8e00f06d476d1ab67f0e72bc14b97fba
     name: hypershift-kubevirt-template
     type: application
     urls:
-    - hypershift-kubevirt-template-0.0.2.tgz
+    - https://batzionb.github.io/cluster-templates-operator/hypershift-kubevirt-template-0.0.2.tgz
     version: 0.0.2
   hypershift-template:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-02-15T15:17:19.101102779+01:00"
+    created: "2023-03-21T20:14:28.500362876+02:00"
     description: A Helm chart for Kubernetes
-    digest: bacb1a2d1d08dbe324d16eb298bfa2de57546e983208a428d0fe0be6804634e3
+    digest: 0245a9e791a9f95daf5eb790067d2ca03ca1d5ddd38a33ba8fe7c0271f3cf441
     name: hypershift-template
     type: application
     urls:
-    - hypershift-template-0.0.3.tgz
+    - https://batzionb.github.io/cluster-templates-operator/hypershift-template-0.0.3.tgz
     version: 0.0.3
-generated: "2023-02-15T15:17:19.100556548+01:00"
+generated: "2023-03-21T20:14:28.499797407+02:00"
