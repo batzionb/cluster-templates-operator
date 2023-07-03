@@ -1,6 +1,7 @@
 package repository
 
 import (
+	"fmt"
 	"net/http/httptest"
 	"net/url"
 	"os"
@@ -24,13 +25,10 @@ var _ = Describe("Git client", func() {
 		server = helmserver.StartGitRepoServer()
 		httpsServer = helmserver.StartTLSGitRepoServer()
 		httpClient, err = GetRepoHTTPClient(server.URL, nil, nil)
+		fmt.Print("url: " + server.URL)
 		Expect(err).To(BeNil())
 		httpsClient, err = GetRepoHTTPClient(httpsServer.URL, nil, nil)
 		Expect(err).To(BeNil())
-	})
-	AfterEach(func() {
-		server.Close()
-		httpsServer.Close()
 	})
 	It("GetGitInfo", func() {
 		// RepoURL = ""

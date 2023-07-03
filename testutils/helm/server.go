@@ -112,8 +112,9 @@ func StartGitRepoServer() *httptest.Server {
 
 func StartTLSGitRepoServer() *httptest.Server {
 	server := httptest.NewUnstartedServer(http.HandlerFunc(gitHandlerFunc))
-	cert, err := tls.LoadX509KeyPair("../testutils/helm/server.crt", "../testutils/helm/server.key")
+	cert, err := tls.LoadX509KeyPair("./testutils/helm/server.crt", "./testutils/helm/server.key")
 	if err != nil {
+		fmt.Println("err ", err)
 		Fail(err.Error())
 	}
 	server.TLS = &tls.Config{Certificates: []tls.Certificate{cert}}
